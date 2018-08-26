@@ -1,0 +1,24 @@
+{
+  "name": "voxylu.xyz",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": "src/pages/index.tsx",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "repository": "git@github.com:Voxylu/voxylu.xyz.git",
+  "author": "Voxylu <hello@voxylu.xyz>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/react": "^16.4.11",
+    "gatsby": "^2.0.0-rc.0",
+    "gatsby-plugin-typescript": "^2.0.0-rc.1",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
