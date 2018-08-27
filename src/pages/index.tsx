@@ -1,8 +1,9 @@
 import * as React from 'react'
-import { Layout } from '../components/layout'
+import { Layout } from '../components/layout/index'
+import { WelcomePage } from '../components/welcomePage'
 
 export default () => (
   <Layout>
-    <h1>Hello</h1>
+    <WelcomePage />
   </Layout>
 )
