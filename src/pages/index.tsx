@@ -3,7 +3,7 @@ import { Layout } from '../components/layout/index'
 import { WelcomePage } from '../components/welcomePage'
 
 export default () => (
-  <Layout>
+  <Layout title="Voxylu.xyz">
     <WelcomePage />
   </Layout>
 )

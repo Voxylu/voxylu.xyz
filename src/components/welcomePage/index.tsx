@@ -1,14 +1,15 @@
 import * as React from 'react'
 import Particles from 'react-particles-js'
 import { settings } from './particles'
+
+// I use require(...) because typescript wont throw errors
 const logoDown = require('./arrow-down-solid.svg')
 const logoLeft = require('./arrow-left-solid.svg')
 const logoRight = require('./arrow-right-solid.svg')
 const styles = require('./index.module.scss')
 const icon = require('./icon.svg')
 
-// console.log(styles)
-
+// Create the arrow conatiner with text and the svg
 const Arrow = ({ direction, name }: { direction: string; name: string }) => {
   let logo
   if (direction === 'down') {
@@ -34,6 +35,7 @@ const Arrow = ({ direction, name }: { direction: string; name: string }) => {
   )
 }
 
+// The main component
 export const WelcomePage = () => (
   <>
     <div className={styles.wrapper}>
@@ -55,6 +57,7 @@ export const WelcomePage = () => (
         <Arrow direction="down" name="Blog" />
       </div>
     </div>
+    {/* This is for particle background */}
     <Particles
       params={settings}
       style={{ position: 'absolute', top: 0, left: 0, zIndex: -1 }}

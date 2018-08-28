@@ -79,6 +79,7 @@
   height: 50px;
 }
 
+// Mixin to generate bounce animation
 @mixin bounce-animation($name) {
   animation-name: $name;
   animation-duration: 1s;
@@ -87,6 +88,7 @@
 
 $translate-value: 4px;
 
+// Animations
 @keyframes bounce-animation-right {
   0% {
     transform: translate($translate-value);
@@ -95,7 +97,6 @@ $translate-value: 4px;
     transform: translate(-$translate-value);
   }
 }
-
 @keyframes bounce-animation-left {
   0% {
     transform: translate(-$translate-value);
@@ -104,7 +105,6 @@ $translate-value: 4px;
     transform: translate($translate-value);
   }
 }
-
 @keyframes bounce-animation-bottom {
   0% {
     transform: translateY($translate-value);
@@ -117,15 +117,14 @@ $translate-value: 4px;
 .left-container .arrow {
   @include bounce-animation(bounce-animation-left);
 }
-
 .right-container .arrow {
   @include bounce-animation(bounce-animation-right);
 }
-
 .bottom-container .arrow {
   @include bounce-animation(bounce-animation-bottom);
 }
 
+// "Roll" animaton for the main image
 @keyframes roll-animation {
   0% {
     transform: rotate(0deg);
@@ -136,9 +135,5 @@ $translate-value: 4px;
 }
 
 .center-container img:hover {
-  // animation-name: roll-animation;
-  // animation-duration: 1s;
-  // animation-iteration-count: infinite;
   animation: roll-animation 1s linear 0s 1;
-  // animation: name duration timing-function delay iteration-count direction fill-mode;
 }

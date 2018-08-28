@@ -14,8 +14,10 @@
   "private": true,
   "devDependencies": {
     "@types/react": "^16.4.11",
+    "@types/react-helmet": "^5.0.7",
     "@types/webpack": "^4.4.11",
     "gatsby": "^2.0.0-rc.0",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^2.0.0-rc.0",
     "gatsby-plugin-typescript": "^2.0.0-rc.1",
     "node-sass": "^4.9.3",
@@ -24,6 +26,7 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
     "react-particles-js": "^2.3.0",
     "typeface-lato": "^0.0.54"
   }
