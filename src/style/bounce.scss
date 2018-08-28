@@ -1,0 +1,34 @@
+// Mixin to generate bounce animation
+@mixin bounce-animation($name) {
+  animation-name: $name;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+$translate-value: 4px;
+
+// Animations
+@keyframes bounce-animation-right {
+  0% {
+    transform: translate($translate-value);
+  }
+  90% {
+    transform: translate(-$translate-value);
+  }
+}
+@keyframes bounce-animation-left {
+  0% {
+    transform: translate(-$translate-value);
+  }
+  90% {
+    transform: translate($translate-value);
+  }
+}
+@keyframes bounce-animation-bottom {
+  0% {
+    transform: translateY($translate-value);
+  }
+  90% {
+    transform: translateY(-$translate-value);
+  }
+}

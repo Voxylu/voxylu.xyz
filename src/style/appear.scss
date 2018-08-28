@@ -1,0 +1,22 @@
+@keyframes from-right {
+  from {
+    transform: translate(-100vw);
+  }
+}
+
+@keyframes from-left {
+  from {
+    transform: translate(100vw);
+  }
+}
+
+@keyframes from-bottom {
+  from {
+    transform: translateY(100vh);
+  }
+}
+
+@mixin appear-animation($side) {
+  animation-name: $side;
+  animation-duration: 1s;
+}

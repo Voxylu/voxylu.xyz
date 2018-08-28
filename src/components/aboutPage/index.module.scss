@@ -1,0 +1,49 @@
+@import '../../style/bounce.scss';
+@import '../../style/appear.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4vh;
+}
+
+.from-left {
+  @include appear-animation(from-left);
+}
+
+.icon {
+  max-height: 50vh;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.decription {
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.question {
+  align-self: center;
+  font-style: italic;
+}
+
+.link {
+  color: #000;
+
+  &:hover {
+    background-color: rgba(246, 183, 9, 0.68);
+  }
+}
+
+.arrow-right {
+  position: absolute;
+  width: 50px;
+  top: calc(50vh - 25px);
+  left: calc(100vw - 60px);
+  @include bounce-animation(bounce-animation-right);
+}
