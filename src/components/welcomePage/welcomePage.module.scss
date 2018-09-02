@@ -6,14 +6,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-}
-
-.from-right {
-  @include appear-animation(from-right);
-}
-
-.from-left {
-  @include appear-animation(from-left);
+  @include appear-animation(from-bottom);
 }
 
 // Contains the main container

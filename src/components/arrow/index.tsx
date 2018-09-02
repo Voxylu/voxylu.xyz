@@ -70,11 +70,7 @@ export const Arrow = ({
             alt={`arrow-${direction}`}
             className={stylesObject.arrow}
             style={style}
-            onClick={() => {
-              // @ts-ignore
-              window.fromLocation = from
-              navigate(to)
-            }}
+            onClick={() => navigate(to)}
           />
         </div>
       </div>
@@ -86,11 +82,7 @@ export const Arrow = ({
         src={logo}
         alt={`arrow-${direction}`}
         style={style}
-        onClick={() => {
-          // @ts-ignore
-          window.fromLocation = from
-          navigate(to)
-        }}
+        onClick={() => navigate(to)}
       />
     )
   }

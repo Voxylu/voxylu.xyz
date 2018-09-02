@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Link } from '@reach/router'
+import { Link } from '../link'
 
 import styles from './blogPage.module.scss'
 import { BlogBar } from '../blogBar'

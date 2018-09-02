@@ -3,9 +3,6 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.from-right {
   @include appear-animation(from-right);
 }
 

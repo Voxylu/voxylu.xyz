@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Link } from '@reach/router'
+import { Link } from '../link'
 import styles from './blogBar.module.scss'
 
 interface BlogBarProps {
@@ -27,7 +27,7 @@ export class BlogBar extends React.Component<BlogBarProps, BlogBarState> {
           {this.props.breadcrumb.map((name) => (
             <Link
               key={name}
-              to={`/${name}`.toLowerCase()}
+              to={`/${name}/`.toLowerCase()}
               className={styles.breadcrumbItem}
             >
               {name}
