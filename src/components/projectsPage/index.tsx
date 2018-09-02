@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 import styles from './index.module.scss'
-import arrowLeft from '../../media/arrow-left-solid.svg'
-import { navigate } from 'gatsby'
+import { NavBar } from '../navBar'
 
 export const ProjectsPage = () => {
   let wrapperClasses = styles.wrapper
@@ -14,21 +13,12 @@ export const ProjectsPage = () => {
   }
 
   return (
-    <>
-      <div className={wrapperClasses}>
-        <h1>Projects</h1>
+    <div className={wrapperClasses}>
+      <NavBar arrowDirection="left" from="projects" to="/" />
+      <div className={styles.mainContainer}>
+        <h1>Comming soon ...</h1>
+        <p>I haven't finish yet ;)</p>
       </div>
-      <img
-        src={arrowLeft}
-        className={styles.arrowLeft}
-        alt="arrow-left"
-        style={{ cursor: 'pointer' }}
-        onClick={() => {
-          // @ts-ignore
-          window.fromLocation = 'projects'
-          navigate('/')
-        }}
-      />
-    </>
+    </div>
   )
 }

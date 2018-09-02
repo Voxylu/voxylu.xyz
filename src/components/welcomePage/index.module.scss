@@ -101,15 +101,20 @@
 }
 
 // "Roll" animaton for the main image
-@keyframes roll-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
+// @keyframes roll-animation {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(180deg);
+//   }
+// }
 
-.center-container img:hover {
-  animation: roll-animation 1s linear 0s 1;
+.center-container img {
+  transition: 240s linear;
+
+  &:hover {
+    transform: rotate(36000deg);
+  }
+  // animation: roll-animation 1s linear 0s 1;
 }

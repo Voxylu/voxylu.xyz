@@ -1,20 +1,17 @@
 @import '../../style/appear.scss';
-@import '../../style/bounce.scss';
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .from-right {
   @include appear-animation(from-right);
 }
 
-.arrow-left {
-  position: absolute;
-  width: 50px;
-  top: calc(50vh - 25px);
-  left: calc(10px);
-  @include bounce-animation(bounce-animation-left);
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
 }

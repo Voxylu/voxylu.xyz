@@ -1,0 +1,80 @@
+@import '../../style/bounce.scss';
+
+.navbar {
+  width: 100vw;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.25rem;
+}
+
+.arrow-left {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  @include bounce-animation(bounce-animation-left);
+}
+
+.brand {
+  margin-right: 20px;
+  // font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+}
+
+@keyframes animation-rotate-up {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes animation-rotate-down {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@mixin burger {
+  width: 40px;
+  height: 40px;
+  animation-duration: 0.5s;
+  margin-right: 5px;
+}
+
+.menu-burger {
+  animation-name: animation-rotate-down;
+  @include burger();
+}
+
+.active-menu-burger {
+  transform: rotate(180deg);
+  animation-name: animation-rotate-up;
+  animation-duration: 0.5s;
+  @include burger();
+}
+
+.menu-list {
+  display: none;
+}
+
+.active-menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style: none;
+  background-color: #f8f8f8;
+  border-bottom: 1px #e7e7e7 solid;
+
+  li {
+    margin: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+  }
+}

@@ -4,7 +4,7 @@
   "description": "My personal website.",
   "main": "src/pages/index.tsx",
   "scripts": {
-    "start": "gatsby develop",
+    "start": "gatsby develop -H 192.168.1.30",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
@@ -19,6 +19,8 @@
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^2.0.0-rc.0",
     "gatsby-plugin-typescript": "^2.0.0-rc.1",
+    "gatsby-source-filesystem": "^2.0.1-rc.0",
+    "gatsby-transformer-remark": "^2.1.1-rc.0",
     "node-sass": "^4.9.3",
     "typescript": "^3.0.1"
   },
@@ -28,6 +30,7 @@
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-particles-js": "^2.3.0",
-    "typeface-lato": "^0.0.54"
+    "typeface-lato": "^0.0.54",
+    "wysiwyg.css": "^0.0.3"
   }
 }
