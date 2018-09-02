@@ -14,22 +14,12 @@ interface BaseProps {
   withStyle?: boolean
   stylesObject?: any
 }
-// type OneOf<T1, T2> = T1 | T2
 
 type ArrowProps = BaseProps &
   React.DetailedHTMLProps<
     React.ImgHTMLAttributes<HTMLImageElement>,
     HTMLImageElement
   >
-
-// interface test {
-//   to: string
-//   from: string
-//   direction: string
-//   text?: string
-//   withStyle?: boolean
-//   stylesObject?: any
-// }
 
 // Create the arrow conatiner with text and the svg
 export const Arrow = ({

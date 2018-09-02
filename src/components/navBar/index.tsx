@@ -1,9 +1,6 @@
 import * as React from 'react'
 
-import { navigate } from 'gatsby'
-
-import styles from './index.module.scss'
-import arrowLeft from '../../media/arrow-left-solid.svg'
+import styles from './navBar.module.scss'
 import dropdown from '../../media/chevron-circle-down-solid.svg'
 import { Arrow } from '../arrow'
 

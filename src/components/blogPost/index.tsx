@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import { Layout } from '../layout'
 import { BlogBar } from '../blogBar'
 
-import styles from './index.module.scss'
+import styles from './blogPost.module.scss'
 
 import 'wysiwyg.css'
 

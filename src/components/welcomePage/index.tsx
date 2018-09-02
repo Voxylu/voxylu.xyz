@@ -4,7 +4,7 @@ import Particles from 'react-particles-js'
 import { settings } from './particles'
 
 import icon from '../../media/icon.svg'
-import styles from './index.module.scss'
+import styles from './welcomePage.module.scss'
 import { Arrow } from '../arrow'
 
 // The main component

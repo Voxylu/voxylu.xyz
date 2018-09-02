@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Link } from '@reach/router'
 
-import styles from './index.module.scss'
+import styles from './blogPage.module.scss'
 import { BlogBar } from '../blogBar'
 
 interface PostPreviewProps {

@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Link } from '@reach/router'
-import styles from './index.module.scss'
+import styles from './blogBar.module.scss'
 
 interface BlogBarProps {
   breadcrumb: string[]

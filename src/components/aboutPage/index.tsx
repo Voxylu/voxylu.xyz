@@ -1,11 +1,9 @@
 import * as React from 'react'
 import { navigate } from 'gatsby'
 
-import { Redirect } from '@reach/router'
-
 import icon from '../../media/icon.svg'
 import logoRight from '../../media/arrow-right-solid.svg'
-import styles from './index.module.scss'
+import styles from './aboutPage.module.scss'
 
 export const AboutPage = () => {
   let wrapperClasses = styles.wrapper
