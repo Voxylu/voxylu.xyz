@@ -16,5 +16,18 @@ module.exports = {
         path: path.resolve(__dirname, 'src/blog'),
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Voxylu.xyz',
+        short_name: 'Voxylu.xyz',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#fff',
+        display: 'standalone',
+        icon: 'src/media/icon.png', // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 }

@@ -5,7 +5,11 @@ import { Layout } from '../components/layout'
 import { AboutPage } from '../components/aboutPage'
 
 export default ({ data }: any) => (
-  <Layout title={`About - ${data.site.siteMetadata.title}`}>
+  <Layout
+    title={`About - ${data.site.siteMetadata.title}`}
+    description="I'm a french guy who like web development."
+    keywords={['About']}
+  >
     <AboutPage />
   </Layout>
 )

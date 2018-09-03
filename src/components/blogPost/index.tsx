@@ -11,9 +11,12 @@ import 'wysiwyg.css'
 
 export default ({ data }: any) => {
   const post = data.markdownRemark
+
+  // con
   return (
     <Layout
       title={`${post.frontmatter.title} - ${data.site.siteMetadata.title}`}
+      description={post.excerpt}
     >
       <BlogBar
         breadcrumb={['Blog', post.frontmatter.title.slice(0, 5) + '...']}
@@ -38,6 +41,7 @@ export const query = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt(pruneLength: 150)
       frontmatter {
         title
       }

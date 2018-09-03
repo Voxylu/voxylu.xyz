@@ -6,7 +6,10 @@ import { WelcomePage } from '../components/welcomePage'
 
 export default ({ data }: any) => {
   return (
-    <Layout title={data.site.siteMetadata.title}>
+    <Layout
+      title={data.site.siteMetadata.title}
+      description="The personnal website of Voxylu.xyz."
+    >
       <WelcomePage />
     </Layout>
   )
