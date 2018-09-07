@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Voxylu.xyz',
+    siteUrl: 'https://voxylu.xyz',
   },
   plugins: [
     'gatsby-plugin-typescript',
@@ -30,5 +31,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-sitemap',
   ],
 }
