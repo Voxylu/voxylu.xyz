@@ -6,13 +6,14 @@
   "scripts": {
     "start": "gatsby develop -H 192.168.1.30",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "serve"
   },
   "repository": "git@github.com:Voxylu/voxylu.xyz.git",
   "author": "Voxylu <hello@voxylu.xyz>",
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "@babel/runtime": "^7.0.0",
     "@types/react": "^16.4.11",
     "@types/react-helmet": "^5.0.7",
@@ -20,9 +21,10 @@
     "gatsby-plugin-manifest": "^2.0.2-rc.1",
     "gatsby-plugin-netlify-cms": "^3.0.0-rc.1",
     "gatsby-plugin-offline": "^2.0.0-rc.2",
-    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0-rc.1",
     "gatsby-plugin-sass": "^2.0.0-rc.0",
-    "gatsby-plugin-typescript": "^2.0.0-rc.1",
+    "gatsby-plugin-sw": "^1.0.1",
+    "gatsby-plugin-typescript": "^2.0.0-rc.4",
     "gatsby-source-filesystem": "^2.0.1-rc.0",
     "gatsby-transformer-remark": "^2.1.1-rc.0",
     "netlify-cms": "^2.0.11",
@@ -31,10 +33,11 @@
   },
   "dependencies": {
     "gatsby-plugin-sitemap": "^2.0.0-rc.1",
-    "react": "^16.4.2",
+    "react": "^16.5.0",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-particles-js": "^2.3.0",
+    "serve": "^10.0.0",
     "typeface-lato": "^0.0.54",
     "wysiwyg.css": "^0.0.3"
   }

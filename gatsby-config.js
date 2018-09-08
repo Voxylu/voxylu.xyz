@@ -29,7 +29,13 @@ module.exports = {
         icon: 'src/media/icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-sw',
+      options: {
+        swPath: 'src/sw.js',
+      },
+    },
+    // 'gatsby-plugin-offline',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sitemap',
   ],
