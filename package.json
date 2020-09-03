@@ -37,7 +37,7 @@
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-particles-js": "^2.3.0",
-    "serve": "^10.0.0",
+    "serve": "^10.1.2",
     "typeface-lato": "^0.0.54",
     "wysiwyg.css": "^0.0.3"
   }
